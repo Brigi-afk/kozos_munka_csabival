@@ -1,0 +1,33 @@
+body{
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "h h h"
+                        "n n n"
+                        "j ar b"
+                        "f f f";
+}
+
+header{
+    grid-area: h;
+}
+
+nav{
+    grid-area: n;
+}
+
+.jobb{
+    grid-area: j;
+}
+
+article{
+    grid-area: ar;
+}
+.bal{
+    grid-area: b;
+}
+footer{
+    grid-area: f;
+}
