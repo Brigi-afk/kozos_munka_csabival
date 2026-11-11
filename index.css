@@ -1,5 +1,7 @@
 body{
     box-sizing: border-box;
+    background-color: black;
+    color: aliceblue;
 }
 main{
     display: grid;
@@ -8,26 +10,62 @@ main{
                         "n n n"
                         "j ar b"
                         "f f f";
+    font-family: 'Times New Roman', Times, serif;
 }
 
 header{
     grid-area: h;
+    background-color: brown;
+    border: 1px white solid;
+}
+
+header h1{
+    text-align: center;
 }
 
 nav{
     grid-area: n;
+    background-color: red;
+    border: 1px white solid;
+}
+
+nav ul{
+    display:  grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    text-align: center;
+    border: 1px white solid;
+}
+
+nav ul a{
+    text-decoration: none;
 }
 
 .jobb{
     grid-area: j;
+    background-color: darkred;
+    border: 1px white solid;
+    width: 40% 0;
+    height: 100%;
 }
 
 article{
     grid-area: ar;
+    text-align: center;
+    background-color: darkred;
+    border: 1px white solid;
 }
+
 .bal{
     grid-area: b;
+    background-color: darkred;
+    border: 1px white solid;
+    width: 40% 0;
+    height: 100%;
 }
 footer{
     grid-area: f;
+    background-color: red;
+    border: 1px white solid;
+     padding: 15px 0;
 }
